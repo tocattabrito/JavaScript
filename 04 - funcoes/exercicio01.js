@@ -3,3 +3,4 @@ function escrevaMeuNome(nome) {
 }
 
 escrevaMeuNome('Brito');
+escrevaMeuNome('Carlos');
