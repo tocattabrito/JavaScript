@@ -10,16 +10,23 @@
     4- Credito Acima de duas vezes, preço normal de etiqueta mais juros de 10%;
 */
 
+function aplicarDesconto(valor, desconto) {
+    return (valor - (valor * (desconto / 100)));
+}
+
+function aplicarJuros(valor, juros) {
+    return (valor + (valor *(juros / 100)));
+}
+    
 let precoEtiqueta = 100;
 let formaDePagamento = 4;
 
 if (formaDePagamento === 1) {
-    console.log(precoEtiqueta - (precoEtiqueta * 0.1));
+    console.log(aplicarDesconto(precoEtiqueta, 10)); // 10% de desconto
 } else if (formaDePagamento === 2) {
-    console.log(precoEtiqueta - (precoEtiqueta * 0.15));
+    console.log(aplicarDesconto(precoEtiqueta, 15)); // 15% de desconto
 } else if (formaDePagamento === 3) {
     console.log(precoEtiqueta);
 } else {
-    // let parcelas = prompt("Quantas parcelas?");
-    console.log(precoEtiqueta + (precoEtiqueta * 0.1));
+    console.log(aplicarJuros(precoEtiqueta, 10)); // Aplica juros de 10%
 }
