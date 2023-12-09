@@ -1,5 +1,5 @@
 function escrevaMeuNome(nome) {
-    console.log("Olá, " + nome);
+    return 'Meu nome é ' + nome;
 }
 
 escrevaMeuNome('Brito');
@@ -8,7 +8,7 @@ escrevaMeuNome('Carlos');
 function verificaIdade(idade) {
     
     if (idade >= 18) {
-        console.log('Maior de idade');
+        console.log(escrevaMeuNome('Brito ') + 'Sou maior de idade');
     } else {
         console.log('Menor de idade');
     }
