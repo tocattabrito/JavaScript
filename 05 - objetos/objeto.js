@@ -2,8 +2,11 @@
 // chave e valor
 const brito = {
     nome: 'João Brito',
-    idade: 43
+    idade: 43,
+   
 };
+
+brito.altura = 1.77;
 
 //acessando os dados da pessoa
 console.log(brito.nome);
