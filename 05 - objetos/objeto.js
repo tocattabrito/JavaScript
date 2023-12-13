@@ -8,6 +8,8 @@ const brito = {
 
 brito.altura = 1.77;
 
+delete brito.altura;
+
 //acessando os dados da pessoa
 console.log(brito.nome);
 console.log(brito.idade);
