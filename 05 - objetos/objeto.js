@@ -1,16 +1,25 @@
 
 // chave e valor
-const brito = {
+const pessoa = {
     nome: 'João Brito',
     idade: 43,
    
+    descreve: function () {
+        console.log(`Meu nome é ${this.nome} e minha idade é ${this.idade}`);
+    }
 };
 
-brito.altura = 1.77;
+pessoa.descreve();
 
-delete brito.altura;
 
-//acessando os dados da pessoa
-console.log(brito.nome);
-console.log(brito.idade);
-console.log(brito);
+
+
+
+// brito.altura = 1.77;
+
+// delete brito.altura;
+
+// //acessando os dados da pessoa
+// console.log(brito.nome);
+// console.log(brito.idade);
+// console.log(brito);
