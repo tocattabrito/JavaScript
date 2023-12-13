@@ -3,6 +3,7 @@
 const pessoa = {
     nome: 'João Brito',
     idade: 43,
+    altura: 1.77,
    
     descreve: function () {
         console.log(`Meu nome é ${this.nome} e minha idade é ${this.idade}`);
@@ -12,7 +13,18 @@ const pessoa = {
 pessoa.descreve();
 
 
+// Acessar um atributo dinamicamente
+console.log(pessoa['altura'] + ' de altura');
 
+/*
+    Exemplos:
+   
+   // Acesso direto
+    pessoa.nome = 'teste';
+
+    // Acesso dinâmico
+    pessoa['nome'] = 'teste';
+*/ 
 
 
 // brito.altura = 1.77;
