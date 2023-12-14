@@ -18,8 +18,16 @@ class Carros {
         this.cor = cor;
         this.gastoMedioPorKm = gastoMedioPorKm;
     }
+
+    calcularGastoDePercurso(distanciaKm, precoCombustivel) {
+        return distanciaKm * this.gastoMedioPorKm * precoCombustivel;
+    }
 }
 
 const uno = new Carros('Fiat', 'Prata', 1 / 12);
-
 console.log(uno);
+console.log(uno.calcularGastoDePercurso(70, 5));
+
+const palio = new Carros('Fiat', 'Preto',1 / 10);
+console.log(palio);
+console.log(palio.calcularGastoDePercurso(70, 5));
