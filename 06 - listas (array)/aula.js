@@ -5,6 +5,10 @@
 
 
 
+for (let i = 0; i < 10; i++) {
+    console.log(i);
+    
+}
 
 
 
@@ -13,8 +17,7 @@
 
 
 
-
-// //  notas do aluno
+// notas do aluno
 
 // const notas = [];
 
