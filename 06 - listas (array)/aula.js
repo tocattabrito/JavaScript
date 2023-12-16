@@ -1,14 +1,36 @@
 
+const notas = [];
 
+notas.push(5);
+notas.push(7);
+notas.push(8);
+notas.push(2);
+notas.push(5);
+notas.push(8);
 
+let soma = 0;
 
-
-
-
-for (let i = 0; i < 10; i++) {
-    console.log(i);
+for (let i = 0; i < notas.length; i++) {
+    const nota = notas[i];
+    soma = soma + nota;
     
 }
+
+const media = soma / notas.length;
+console.log(media);
+
+
+
+
+
+// const nome = 'JOÃO BRITO';
+
+
+
+// for (let i = 0; i < nome.length; i++) {
+//     console.log(nome[i]);
+    
+// }
 
 
 
@@ -47,7 +69,7 @@ for (let i = 0; i < 10; i++) {
 
 
 // // adicionar elemento a lista
-// alunos.push('Renan'); // insere no final da lista
+// alunos.push('Renan'); // i no final da lista
 // alunos[4] = 'Vinícius';
 
 
