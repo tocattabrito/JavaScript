@@ -9,7 +9,7 @@ notas.push(5);
 notas.push(8);
 
 let soma = 0;
-
+// debug no código abaixo
 for (let i = 0; i < notas.length; i++) {
     const nota = notas[i];
     soma = soma + nota;
