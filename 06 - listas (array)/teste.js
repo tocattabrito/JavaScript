@@ -4,4 +4,4 @@
         numeros.push(i);
     }
 
-    console.log(numeros);
+    console.log(numeros); // imprime o conteúdo da lista
