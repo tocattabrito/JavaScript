@@ -11,7 +11,7 @@ for (let i = 0; i < numeros.length; i++) {
     if (numero % 2 === 0) {
        console.log(numero +' Par');
    } else {
-    //    console.log([i]+' Impar')
+    //    console.log(numero +' Impar')
    }
         
 }
