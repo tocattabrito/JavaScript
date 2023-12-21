@@ -1,5 +1,6 @@
 
-const entradas = [5, 50, 10, 98, 23];
+// const entradas = [5, 50, 10, 98, 23];
+const entradas = [5, 50, 10, 70, 23, 85, 100];
 let i = 0;
 
 function gets() {
