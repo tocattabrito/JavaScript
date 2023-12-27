@@ -6,7 +6,9 @@ const url = `https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=${limit}`
 // Método assicrono "quando ocorrer" exiba a respota
 fetch(url)
     .then(function (response) {
-        console.log(response);
+        response.json().then(function (resposebody) {
+            console.log(resposebody);
+        })
     })
     .catch(function (error) {
         console.error(error);
