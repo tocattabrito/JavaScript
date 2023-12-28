@@ -29,11 +29,13 @@ const pokemonList = document.getElementById('pokemonList');
                                               
 pokeApi.getPokemons().then((pokemons = []) => {
     
-    const newList =  pokemons.map((value, index, array) => {
-        return "";
+    const newList =  pokemons.map((pokemon) => {
+        return convertPokemonToLi(pokemon);
     });
-        
     
+    const newHtml = newList.join('');   
+   
+    pokemonList.innerHTML += newHtml;
     
     
     // const listItens = [];
