@@ -24,21 +24,23 @@ function convertPokemonToLi(pokemon) {
     `    
 }
 
+const pokemonList = console.log(document.getElementById('pokemonList'));
+pokemonList.innerHTML = "<li>teste</li>";
 
 // Método assicrono "quando ocorrer" exiba a respota
 
 /*Utilizado o arrow function => em uma função de call back*/ 
-fetch(url)
-    .then((response) => response.json())
-    .then((jsonbody) => jsonbody.results)
-    .then((pokemonlist) => {
+// fetch(url)
+//     .then((response) => response.json())
+//     .then((jsonbody) => jsonbody.results)
+//     .then((pokemonlist) => {
       
-        for (let i = 0; i < pokemonlist.length; i++) {
-            const pokemon = pokemonlist[i];
-            console.log(convertPokemonToLi(pokemon));
-        }
-    })   
-    .catch((error) => console.log(error))
+//         for (let i = 0; i < pokemonlist.length; i++) {
+//             const pokemon = pokemonlist[i];
+//             console.log(convertPokemonToLi(pokemon));
+//         }
+//     })   
+//     .catch((error) => console.log(error))
  
 
 /*Retorna o mesmo resultado do código acima*/ 
