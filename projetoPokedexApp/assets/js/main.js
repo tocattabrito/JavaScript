@@ -24,8 +24,8 @@ function convertPokemonToLi(pokemon) {
     `    
 }
 
-const pokemonList = console.log(document.getElementById('pokemonList'));
-pokemonList.innerHTML = "<li>teste</li>";
+const pokemonList = document.getElementById('pokemonList');
+pokemonList.innerHTML += "<li>teste</li>";
 
 // Método assicrono "quando ocorrer" exiba a respota
 
