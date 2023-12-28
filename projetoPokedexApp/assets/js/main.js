@@ -25,25 +25,18 @@ function convertPokemonToLi(pokemon) {
 }
 
 const pokemonList = document.getElementById('pokemonList');
-pokemonList.innerHTML += "<li>teste</li>";
 
-// Método assicrono "quando ocorrer" exiba a respota
+                                              
+pokeApi.getPokemons().then((pokemons) => {
 
-/*Utilizado o arrow function => em uma função de call back*/ 
-// fetch(url)
-//     .then((response) => response.json())
-//     .then((jsonbody) => jsonbody.results)
-//     .then((pokemonlist) => {
-      
-//         for (let i = 0; i < pokemonlist.length; i++) {
-//             const pokemon = pokemonlist[i];
-//             console.log(convertPokemonToLi(pokemon));
-//         }
-//     })   
-//     .catch((error) => console.log(error))
- 
+    for (let i = 0; i < pokemons.length; i++) {
+        const pokemon = pokemons[i];
+        listItens.push(convertPokemonToLi(pokemon));
+    }
+    
+}
 
-/*Retorna o mesmo resultado do código acima*/ 
+/*Retorna o mesmo resultado do código acima*/
 // fetch(url)
 //     .then(function (response) {
 //         return response.json()
@@ -58,7 +51,7 @@ pokemonList.innerHTML += "<li>teste</li>";
 //         console.log('Requisição concluida!');
 //     });
 
-/*Retonar o mesmo resultdo do código acima*/ 
+/*Retonar o mesmo resultdo do código acima*/
 // fetch(url)
 //     .then(function (response) {
 //         response
