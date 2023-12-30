@@ -6,6 +6,7 @@ pokeApi.getPokemons = (offset = 0, limit = 10) => {
     return fetch(url)
         .then((response) => response.json())
         .then((jsonbody) => jsonbody.results)
+        .then((pokemons) => pokemons.map(pokeApi.getPokemonsDetail))
         .catch((error) => console.error(error))
 } 
 
