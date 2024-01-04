@@ -32,17 +32,17 @@ loadPokemonItens(offset, limit)
 
 loadMoreButton.addEventListener('click', () => {
     offset += limit
-    loadPokemonItens(offset, limit)
-    // const qrdRecordWithNextPage = offset + limit
+    // loadPokemonItens(offset, limit)
+    const qrdRecordWithNextPage = offset + limit
 
-    // if (qrdRecordWithNextPage >= maxRecords) {
-    //     const newLimit = maxRecords - offset
-    //     loadPokemonItens(offset, newLimit)
+    if (qrdRecordWithNextPage >= maxRecords) {
+        const newLimit = maxRecords - offset
+        loadPokemonItens(offset, newLimit)
 
-    //     loadMoreButton.parentElement.removeChild(loadMoreButton)   
-    // } else {
-    //     // loadPokemonItems(offset, limit)
-    // }
+        loadMoreButton.parentElement.removeChild(loadMoreButton)   
+    } else {
+        loadPokemonItems(offset, limit)
+    }
 })
                                               
 // pokeApi.getPokemons().then((pokemons = []) => {
